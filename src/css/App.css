@@ -1,0 +1,50 @@
+@import 'tachyons/src/_colors.css';
+
+/* Document */
+html {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--black);
+  cursor: default;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Buttons */
+button:active { background-color: var(--black-10); }
+
+/* Cursors */
+.default { cursor: default; }
+.pointer-events-none { pointer-events: none; }
+
+/* Inputs */
+::-webkit-input-placeholder { color: var(--silver); }
+::-moz-placeholder { color: var(--silver); }
+:-ms-input-placeholder { color: var(--silver); }
+:-moz-placeholder { color: var(--silver); }
+
+input,
+select,
+textarea {
+  box-shadow: 0 0 0 10px transparent;
+  outline: 0;
+  transition: all 320ms ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px var(--blue);
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  box-shadow: 0 0 0 3px var(--red);
+}

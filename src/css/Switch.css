@@ -1,0 +1,19 @@
+[data-name="track"] {
+  background-color: var(--black-50);
+}
+
+[data-name="inner-track"] {
+  transition: all 160ms ease-in-out;
+}
+
+input.switch[type="checkbox"] + [data-name="track"] [data-name="inner-track"] {
+  transform: translateX(-37.5%);
+}
+
+input.switch[type="checkbox"]:checked + [data-name="track"] {
+  background-color: var(--blue);
+}
+
+input.switch[type="checkbox"]:checked + [data-name="track"] [data-name="inner-track"] {
+  transform: translateX(4%);
+}

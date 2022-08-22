@@ -1,0 +1,29 @@
+{
+  "name": "handwhittled",
+  "version": "1.0.0",
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
+  "scripts": {
+    "build": "parcel build index.html --experimental-scope-hoisting",
+    "serve": "parcel index.html --no-hmr --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handwhittled/handwhittled.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fecha": "^2.3.3",
+    "filesize": "^3.6.1",
+    "nodom": "^2.1.0",
+    "postcss-modules": "^1.1.0",
+    "pouchdb": "^7.0.0",
+    "redom": "^3.12.7",
+    "tachyons": "^4.10.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.0.3"
+  }
+}
