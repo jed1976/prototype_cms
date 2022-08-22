@@ -7,8 +7,8 @@ exports.api = app => {
   let docs
 
   const options = { live: true, retry: true, since: 0 }
-  const localDB = new PouchDB.default('timothymcallister')
-  const remoteDB = new PouchDB.default('http://192.168.1.86:5984/timothymcallister')
+  const localDB = new PouchDB.default('default')
+  const remoteDB = new PouchDB.default('http://192.168.1.86:5984/default')
 
   const binarySearch = (arr, docId) => {
     let low = 0, high = arr.length, mid
